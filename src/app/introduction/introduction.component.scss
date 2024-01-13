@@ -1,0 +1,128 @@
+.introduction {
+    display: flex;
+    align-items: center;
+    background-color: #3F2E3E;
+    color: white;
+    border-bottom: 1px solid #7A7A7A;
+    padding-bottom: 2%;
+
+    .image {
+        height: 30%;
+        width: 55%;
+        margin-left: 2%;
+
+        img {
+            margin-top: 3%;
+            width: 90%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+
+        }
+    }
+
+
+    .text {
+        width: 100%;
+        text-align: left;
+        // font-size: 3em;
+        font-weight: 600;
+        line-height: 1;
+
+        .text-theme {
+            background: linear-gradient(to right, #12c2e9, #f64f59, #f64f59);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        p {
+            font-size: 1.3vw;
+            font-weight: 300;
+            margin: 0px;
+            max-width: 80%;
+
+        }
+
+        h6 {
+            margin-bottom: 0px;
+            font-size: 1.5vw;
+        }
+
+        h2 {
+            font-size: 3vw;
+            margin-top: 0.6vw;
+            margin-bottom: 1.3vw;
+            max-width: 60%;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 50%;
+            margin-left: 0%;
+            padding: 2%;
+
+            p {
+                font-size: 1.8vw;
+                font-weight: 200;
+            }
+
+            .experience-box {
+                //background-color: #eaf2f8;
+                border-right: 3px solid rgb(148, 142, 142);
+            }
+
+            .projects-box {
+                //background-color: white;
+                padding-left: 5%;
+            }
+        }
+
+
+        .link-effect {
+            font-size: 1.5vw;
+            font-weight: 300;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    // this breakpoint can be adjusted as per your needs
+    .introduction {
+        flex-direction: column;
+
+        .text {
+            margin-top: 2%;
+            margin-left: 6%;
+
+            p {
+                font-size: 2.7vw;
+            }
+
+            h6 {
+                font-size: 2vw;
+            }
+
+            h2 {
+                font-size: 6vw;
+            }
+
+            .container {
+                p {
+                    font-size: 2.5vw;
+                }
+            }
+
+            .link-effect {
+                font-size: 2.5vw;
+            }
+        }
+
+
+    }
+
+}
