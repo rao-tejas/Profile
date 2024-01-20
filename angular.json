@@ -20,6 +20,7 @@
             "outputPath": "dist/profile",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/Profile/",
             "polyfills": [
               "zone.js"
             ],
@@ -57,7 +58,14 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              },
               "extractLicenses": false,
               "sourceMap": true
             }
